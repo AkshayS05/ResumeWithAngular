@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { portfolioData } from './components/portfolio/portfolio.data';
+import { PortfolioCard } from './model/portfolioModel/portfolio.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'resume';
+  portfolioCards:PortfolioCard[]=portfolioData;
 }

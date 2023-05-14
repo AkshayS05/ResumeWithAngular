@@ -1,0 +1,19 @@
+
+<div class="row">
+    <div class="card mb-3 position-relative" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]=card.thumbnail class="img-fluid rounded-start" [alt]=card.description>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{card.header}}</h5>
+            <p class="card-text">{{card.description}}</p>
+            <p class="card-text"><small class="text-body-secondary">Technologies used: {{card.technologies}}</small></p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-details">View Details</button>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="position-relative">
+        <img src={{banner.imgUrl}} class="d-block w-100" alt="...">
+
+        <div class="position-absolute top-20 start-50 translate-middle-x z-index-2" style="top: 25%;">
+          <img src="{{ banner.profile_image }}" class="rounded-circle img-fluid" alt="..." style="width: 100px; height: 100px; top: 20%;">
+        </div>
+
+
+        <div class="position-absolute top-50 start-0 bg-dark bg-blur bg-opacity-50 p-3 w-100">
+
+          <h1 class="text-white text-center">{{banner.heading}}</h1>
+          <p class="text-white text-center">{{banner.subHeading}}</p>
+        </div>
+        <div class="position-absolute d-flex justify-content-center align-items-center" style="top: 70%; left: 50%; transform: translate(-50%, -50%);">
+
+          <a href="{{banner.url}}" class="btn btn-primary me-2">{{banner.buttonOneText}}</a>
+          <a href="{{banner.url}}" class="btn btn-primary ms-2">{{banner.buttonTwoText}}</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

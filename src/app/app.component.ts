@@ -10,4 +10,5 @@ import { PortfolioCard } from './model/portfolioModel/portfolio.model';
 export class AppComponent {
   title = 'resume';
   portfolioCards:PortfolioCard[]=portfolioData;
+  
 }

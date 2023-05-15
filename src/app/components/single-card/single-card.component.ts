@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,EventEmitter,Input,Output } from '@angular/core';
 import { PortfolioCard } from 'src/app/model/portfolioModel/portfolio.model';
 
 @Component({
@@ -8,5 +8,10 @@ import { PortfolioCard } from 'src/app/model/portfolioModel/portfolio.model';
 })
 export class SingleCardComponent {
   @Input() card!: PortfolioCard;
+  @Output() onCardSelect = new EventEmitter<PortfolioCard>();
 
+  handleClick() {
+    console.log("Reached here...");
+    this.onCardSelect.emit(this.card);
+  }
 }
